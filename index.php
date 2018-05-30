@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/app.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/angular-range-slider.css">	
+	<link rel="stylesheet" href="css/angular-range-slider.css">
 	<link rel="stylesheet" href="css/animate.min.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -33,10 +33,12 @@
 	</div>
 </body>
  <!--javascripts files-->
-  <script src="lib/jquery-2.1.1.min.js"></script>
-  <script src="lib/angular.js"></script>
+  <script src="lib/jquery-2.1.1.min.js"></script> 
+    <script src="lib/angular.js"></script>
+
   <script src="lib/angular-route.js"></script>
-  <script src="lib/ui-bootstrap-tpls.min.js"></script>
+
+   <script src="lib/ui-bootstrap-tpls.min.js"></script>
   <script src="lib/bootstrap.min.js"></script>
   <script src="lib/angular-animate.min.js"></script>
   <script src="js/app.js"></script>

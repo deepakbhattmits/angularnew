@@ -10,7 +10,7 @@
 			<h4 class='my_page_head' ng-bind='( page_name | uppercase )'></h4>
 		</div>
 		<div class='col-sm-8 col-xs-9 text-left'>
-			<h5 class='my_home_name' ng-bind='( userName | uppercase )'></h5> 
+			<h5 class='my_home_name' ng-bind='( userName | uppercase )'></h5>
 		</div>
 	</div>
 <div class="container">
@@ -18,7 +18,7 @@
 		<!-- new carousel b-->
 			<div id="slides_control" class='carousasl-custom'>
 				<div>
-					<carousel interval="myInterval">
+					<carousel interval="myInterval" class="carousel">
 						<slide ng-repeat="slide in slides" active="slide.active">
 							<img ng-src="{{slide.image}}">
 							<div class="carousel-caption">
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		<!-- new carousel e-->
-	</div> 
+	</div>
 	<div class='row'>
 			<!-- parallax start -->
 			<div class="bgimg-1">
@@ -67,7 +67,7 @@
 				</div>
 			</div>
 	<!-- parallax start -->
-	</div>    
+	</div>
 </div>
 </body>
 </html>
