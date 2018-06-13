@@ -509,21 +509,22 @@ app.directive('ngConfirmClick',function(){
         $scope.enq = 'enquiry';
         url = "studentInfo.php";
         $scope.submitFormcntc = function() {
-        // console.log($scope.user);
-
-        $http({url:url ,method: "POST",
-                    data: {'username':$scope.user.username,'useremail':$scope.user.useremail,'userenq':$scope.user.userenq,'queryType':'sendenq'},
-                    headers: {'Content-Type': 'application/json' }
-                })
-                .then(function(res) {
-                    // console.log(res);// do ur code
-                    $scope.successmsg = res.data.sucess;
-                    $scope.user = '';
-                    }).catch(function onError(response) {
-                    $scope.errormsg = response.data.error; // Handle error
-                    $scope.user = '';
-                });
-        }
+			// console.log($scope.user);
+			if($scope.user.username != null && $scope.user.useremail != null && $scope.user.userenq != null) {
+				$http({url:url ,method: "POST",
+						data: {'username':$scope.user.username,'useremail':$scope.user.useremail,'userenq':$scope.user.userenq,'queryType':'sendenq'},
+						headers: {'Content-Type': 'application/json' }
+					})
+					.then(function(res) {
+						// console.log(res);// do ur code
+						$scope.successmsg = res.data.sucess;
+						$scope.user = '';
+						}).catch(function onError(response) {
+						$scope.errormsg = response.data.error; // Handle error
+						$scope.user = '';
+					});
+			}
+         }
         /* var latlang = {lat:12.9184748, lng: 77.6321749};
         var myOptions = {
              zoom: 5,
